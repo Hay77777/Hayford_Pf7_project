@@ -5,7 +5,7 @@
 # Purpose: End-to-end pipeline for merging haplotype metadata,
 #          combining yearly data, summarizing SNP allele frequencies,
 #          visualizing trends, and performing p-value trend tests.
-# Author: [Your Name]
+# Author: [Hayford Osei Offei]
 # Usage: Rscript snp_analysis_pipeline.R
 # ===============================================================
 
