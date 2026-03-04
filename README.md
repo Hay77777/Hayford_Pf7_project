@@ -221,6 +221,4 @@ If you use this code or results, please cite:
 
 ---
 
-## 📝 License
 
-This project is licensed under the MIT License.
