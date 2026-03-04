@@ -11,7 +11,7 @@ This analysis uses data from two public sources:
 | Source | Files | Used for |
 |--------|-------|---------|
 | MalariaGEN Pf7 | `Pf7_samples.txt`, `Pf7_drug_resistance_marker_genotypes.txt` | SNP trend analysis (438 samples) |
-| ENA | FASTQ files (ERR accessions below) | WGS analysis (90 samples) |
+| ENA | FASTQ files (ERR accessions below) | WGS analysis (90 downloaded; 82 passed QC; 71 used for final analysis) |
 
 ---
 
@@ -34,7 +34,7 @@ This analysis uses data from two public sources:
 
 ## 2. WGS Samples — ENA Accession Numbers
 
-90 whole-genome sequencing samples from the **Kassena Nankana West District, Upper East Region, Ghana (2010–2018)** were downloaded from the European Nucleotide Archive (ENA).
+90 whole-genome sequencing samples from the **Kassena Nankana West District, Upper East Region, Ghana (2010–2018)** were downloaded from the European Nucleotide Archive (ENA). Of these, 82 passed FastQC/Trimmomatic QC and 71 were retained after PLINK processing for final analysis.
 
 **ENA Portal:** https://www.ebi.ac.uk/ena
 
@@ -147,8 +147,11 @@ data/
 └── fastq/
     ├── ERR019549_1.fastq.gz
     ├── ERR019549_2.fastq.gz
-    └── ... (paired files for all 90 samples)
+    └── ... (paired files for all 90 downloaded samples)
 ```
+
+> **Note on sample numbers:** 90 samples were downloaded, 82 passed QC, and 71 were
+> retained after PLINK processing. The pipeline handles QC filtering automatically.
 
 Then run the pipeline from the project root:
 
